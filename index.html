@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="count">
+
+      <div class="day_container">
+        <label for="day" class="title">DAY</label>
+        <input class="day_input" onkeyup="culcule()" id="day" type="number">
+      </div>
+
+      <div class="month_container">
+        <label for="month" class="title">MONTH</label>
+        <input class="month_input" onkeyup="culcule()" id="month" type="number">
+      </div> 
+
+      <div class="year_container">
+        <label for="year" class="title">YEAR</label>
+        <input class="year_input" onkeyup="culcule()" id="year" type="number">
+      </div>
+    </div>
+      <hr class="line">
+      <div class="icon">
+        <i class="ri-arrow-down-line"></i>
+      </div>
+    <div class="output">
+      <span class="numbers" id="yearOut">2024</span>years
+      <span class="numbers" id="monthOut">10</span>months
+      <span class="numbers" id="dayOut">31</span>days
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
